@@ -1,11 +1,12 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url(back.jpg);
 }
 
 @font-face {
     font-family: Cream; 
-    src: url('Cream Cake.otf'); 
+    src: url('CaviarDreams.ttf'); 
 } 
 
 .topnav {
@@ -28,7 +29,7 @@ color: black;
 }
 
 .topnav a.active {
-background-color: #04AA6D;
+background-color: burlywood;
 color: white;
 }
 
@@ -37,6 +38,17 @@ h1.bean {
     text-align: center;
     font-family: "Cream";
     font-size: 70px;
+    padding: none;
+    margin-bottom: -20px;
+    margin-top: 4px;
+}
+
+h2.bean{
+    font-family: "Cream";
+    text-align: center;
+    padding: none;
+    margin: none;
+    color: #04AA6D;
 }
 
 .pad {
@@ -72,6 +84,19 @@ h1.bean {
     box-shadow: #333;
     border: 2px solid black;
     background-image: linear-gradient(green, white);
+}
+
+.boxalt{
+    margin: 5px;
+    clear: left;
+    padding: 10px;
+    box-shadow: #333;
+    border: 2px solid black;
+    background-image: url("background.jpg");
+    color: black;
+    text-shadow: 1px 1px #646464;
+    font-size: 18px;
+    
 }
 
 .center{
