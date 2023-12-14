@@ -115,28 +115,86 @@ h2.bean{
     width: 100%;
 }
 
-#talkbubble {
-    text-align: center;
-    height: 200px;
-    width: 50%;
-    background: linear-gradient(to right,blue, red);
-    border: 2px solid black;
-    border-radius: 50% / 100% 100% 0 0; 
-    padding-left: 10px;
-    color: #ddd;
-    padding-top: 50px;
-}
-
-#talk {
-    height: 200px;
-    background: linear-gradient(to right,blue, red);
+#arrow-pointer {
+    width: 96%;
+    height: 150px;
+    background: linear-gradient(90deg,#7eb4e2,#32557f);
     position: relative;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding-left: 10px;
-    color: #ddd;
+  
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0; bottom: 0; width: 0; height: 0;
+      border-left: 75px solid #7eb4e2;
+      border-top: 75px solid transparent;
+      border-bottom: 75px solid transparent;
+    }
+  
+    &:before {
+      content: '';
+      position: absolute;
+      right: -75px;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-left: 75px solid #32557f;
+      border-top: 75px solid transparent;
+      border-bottom: 75px solid transparent;
+    }
+
 }
 
+.arrow-pointerp{
+    max-width: 90%;
+    padding-top: 10px;
+    padding-left: 50px;
+    margin-bottom: none;
+}
 
+#revarrow-pointer {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(90deg,#e85d04,#d00000);
+    position: relative;
+    margin-left: 75px;
+  
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0; bottom: 0; width: 0; height: 0;
+      left: -75px;
+      border-right: 75px solid #e85d04;
+      border-top: 75px solid transparent;
+      border-bottom: 75px solid transparent;
+    }
+  
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0px;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-right: 75px solid #d00000;
+      border-top: 75px solid transparent;
+      border-bottom: 75px solid transparent;
+    }
+
+}
+
+.revarrow-pointerp{
+    max-width: 70%;
+    padding-top:30px;
+    margin-bottom: none;
+    padding-left: 10px;
+}
+
+#arrow-pointer ol{
+    padding-left: 100px;
+}
+
+.aaa{
+    padding-left: 80px;
+    padding-top: 0;
+    margin-top: -15px;
+}
