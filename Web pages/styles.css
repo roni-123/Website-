@@ -210,3 +210,12 @@ h2.bean{
     padding-top: 0;
     margin-top: -15px;
 }
+
+dialog { 
+    display: block;
+    box-shadow: 10px 10px;
+    max-height: 200px;
+    padding-bottom: 25px;
+}
+
+dialog:not(:target):not([open]) { display: none; }
