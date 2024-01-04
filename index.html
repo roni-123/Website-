@@ -1,0 +1,68 @@
+<!-- Doctype explains the file type of the document-->
+<!DOCTYPE html>
+<!-- head contols the title of the page, websearch optimization and meta data-->
+<head>
+    <!-- Tells the website is using unicode-->
+    <meta charset="UTF-8">
+
+    <!-- Sets screen size to device display size-->
+    <meta name = "viewport" content="width=device-width, initial-scale-1.0">
+
+    <!--Web search info-->
+    <meta name="description" content="Test project for html">
+    <meta name="keywords" content="HTML">
+    <meta name="author" content="Roni Mujku">
+
+    <title>Bean and Brew</title>
+    <!-- Link css file to html-->
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <h1 class = "bean">
+        Bean & Brew
+    </h1>
+    <h2 class="bean">Cafe</h2>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="Booking.html">Bookings</a>
+        <a href="Social Media.html">Social Media</a>
+        <a href="About.html">About</a>
+    </div>
+    <div class="pad">
+    <p> 
+        Welcome to bean and brew the number one family owned cafe in the UK, feel free to use our website to book items for pickup at one of our three locations and to join us and make an account to keep up to date with news of new offers and events. Also feel free to join in on our #ratemycake social media campaign to support us
+    </p>
+    <h3> 
+        To log in or create an account click here
+    </h3>
+    
+    <a href="#dialog">
+        <button class="button">Log in</button>
+    </a>
+    </div>
+    <dialog id="dialog">
+        <div class="right">
+            <a href="#!" style="text-decoration: none;color: black;">X</a>
+        </div>
+        <h1>Sign in to Bean & Brew</h1>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        New to Bean & Brew?
+        <a href = "Sign up.html">Create an Account</a><br><br>
+        <input type="submit" value="Submit">
+    </dialog>
+    <footer class="footer">
+        <div class="footerbox">
+            <p>
+                Bean&Brew.com
+                <br><br>
+                The number one family owned cafe
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
