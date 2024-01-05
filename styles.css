@@ -3,16 +3,16 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-image: url(back.jpg);
-    min-height:120vh;
+    min-height:100vh;
 }
 
-/*
+
 body::after {
     content: '';
     display: block;
-    height: 100px; /* Set same as footer's height 
-  }
-*/
+    height: 100px; /* Set same as footer's height*/ 
+}
+
 
 @font-face {
     font-family: Cream; 
@@ -66,25 +66,22 @@ h2.bean{
     margin-left: 6px;
 }
 
+.buttonalign{
+    text-align: center;
+    margin: none;
+    padding: none;
+    border: none;
+}
+
 .button {
     border: none;
     color: rgb(255, 255, 255);
     padding: 15px 32px;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px;
     cursor: pointer;
     background-color: #04AA6D;
-}
-
-.wrapper {
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .box{
@@ -150,6 +147,19 @@ h2.bean{
     flex-direction: column;
 }
 
+.boxalt3{
+    margin: 5px;
+    padding: 8px;
+    box-shadow: 10px 10px;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    height: 55px;
+    width: 300px;
+    display: inline-block;
+}
+
 .center{
     margin-top: 10px;
     text-align: center;
@@ -167,6 +177,7 @@ dialog {
     display: block;
     box-shadow: 10px 10px;
     max-height: 200px;
+    margin-top: 50px;
     padding-bottom: 25px;
 }
 
@@ -181,6 +192,7 @@ dialog:not(:target):not([open]) { display: none; }
 .social{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .fa {
@@ -199,10 +211,84 @@ dialog:not(:target):not([open]) { display: none; }
 .fa-facebook {
     background: #3B5998;
     color: white;
+    border: 1px solid black;
+    margin-right: 10px;
   }
   
 /* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+
 .fa-instagram {
     background: #D52F87;
     color: white;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+
+.fa-linkedin {
+    background: #0077b5;
+    color: white;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+
+.fa-reddit {
+    background: #FF5700;
+    color: white;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 10px;
+    width: 300px;
+    position: absolute;
+    margin-top: 10px;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    transition: top 0.5s ease-in-out;
+    border: 1px solid black;
+    background-color: white;
+    z-index: 2;
+    box-shadow: 2px 2px;
+}
+
+.modal.active{
+    top: inherit
+}
+
+.modal-btn{
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    text-align: end;
+    cursor: pointer;
+}
+
+#overlay{
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+#overlay.active{
+    display: block;
 }

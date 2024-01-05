@@ -37,14 +37,11 @@
         To log in or create an account click here
     </h3>
     
-    <a href="#dialog">
-        <button class="button">Log in</button>
-    </a>
+    <button class="button" data-target = "#modal1">Log in</button>
     </div>
-    <dialog id="dialog">
-        <div class="right">
-            <a href="#!" style="text-decoration: none;color: black;">X</a>
-        </div>
+
+    <div class = "modal" id = "modal1">
+        <button class="modal-btn" data-target = "#modal1">&times;</button>
         <h1>Sign in to Bean & Brew</h1>
         <label for="email">Email Address:</label>
         <input type="email" id="email" name="email"><br><br>
@@ -53,7 +50,11 @@
         New to Bean & Brew?
         <a href = "Sign up.html">Create an Account</a><br><br>
         <input type="submit" value="Submit">
-    </dialog>
+    </div>
+
+    <div id = "overlay"></div>
+    <script src="script.js"></script>
+
     <footer class="footer">
         <div class="footerbox">
             <p>

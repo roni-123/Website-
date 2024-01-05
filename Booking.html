@@ -29,42 +29,44 @@
         <a href="Social Media.html">Social Media</a>
         <a href="About.html">About</a>
     </div>
-    <div class = "pad center">
-        <button class="button">Book a Table</button>
-        <button class="button">Book an Item</button>
+
+    <div class = "buttonalign">
+        <button class="button" data-target = "#modal1">Book a Table</button>
+        <button class="button">Order an Item</button>
         <button class="button">Book a Class</button>
     </div>
-    <div style = "height: initial" class="wrapper">
-        <div class="box">
-            You are booking a table at <select name="Location" id="Location">
-                <option value="" selected="selected">Harrogate</option>
-                <option value="" selected="selected">Leeds</option>
-                <option value="" selected="selected">Knaresborough Castle</option>
-                </select><br>
 
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date">
-            <label style="padding-left: 50px;" for="Time">Time:</label>
-            <input type="time " value="08:30:00" step="600"><br>
-            <label for="people">People</label>
-            <select name="Peoples" id="Peoples">
-                <option value="" selected="selected">1 Person</option>
-                <option value="" selected="selected">2 People</option>
-                <option value="" selected="selected">3 People</option>
-                <option value="" selected="selected">4 People</option>
-                <option value="" selected="selected">5 People</option>
-            </select><br><br>
-            <label for="Full Name">Full Name:</label>
-            <input id = "Full Name" name ="Full Name"><br><br>
-            <label for="Email">Email:</label>
-            <input type = "email" id = "Email" name ="Email"><br><br>
-            <label for="Phone">Phone Number:</label>
-            <input type = "number" id = "Phone Number" name ="Phone Number">
+    <div class = "modal" id = "modal1">
+        <button class="modal-btn" data-target = "#modal1">&times;</button>
+        You are booking a table at <select name="Location" id="Location">
+            <option value="" selected="selected">Harrogate</option>
+            <option value="" selected="selected">Leeds</option>
+            <option value="" selected="selected">Knaresborough Castle</option>
+            </select><br>
 
-
-
-        </div>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+        <label style="padding-left: 50px;" for="Time">Time:</label>
+        <input type="time " value="08:30:00" step="600"><br>
+        <label for="people">People</label>
+        <select name="Peoples" id="Peoples">
+            <option value="" selected="selected">1 Person</option>
+            <option value="" selected="selected">2 People</option>
+            <option value="" selected="selected">3 People</option>
+            <option value="" selected="selected">4 People</option>
+            <option value="" selected="selected">5 People</option>
+        </select><br><br>
+        <label for="Full Name">Full Name:</label>
+        <input id = "Full Name" name ="Full Name"><br><br>
+        <label for="Email">Email:</label>
+        <input type = "email" id = "Email" name ="Email"><br><br>
+        <label for="Phone">Phone Number:</label>
+        <input type = "number" id = "Phone Number" name ="Phone Number">
     </div>
+    
+    <div id = "overlay"></div>
+    <script src="script.js"></script>
+
     <footer class="footer">
         <div class="footerbox">
             <p>
