@@ -11,7 +11,8 @@ btns.forEach(btn => {
 
 close_btns.forEach(btn => {
     btn.addEventListener('click', () => {
-        document.querySelector(btn.dataset.target).classList.remove("active");
+        const modals = document.querySelectorAll(".modal");
+        modals.forEach((modal) => modal.classList.remove("active"));
         overlay.classList.remove("active");
     })
 })

@@ -38,17 +38,43 @@
     </h3>
     
     <button class="button" data-target = "#modal1">Log in</button>
+    <button class="button" data-target = "#modal2">Sign Up</button>
     </div>
 
     <div class = "modal" id = "modal1">
-        <button class="modal-btn" data-target = "#modal1">&times;</button>
-        <h1>Sign in to Bean & Brew</h1>
+        <div class="header">
+            <button class="modal-btn" data-target = "#modal1">&times;</button>
+            <h1>Sign in to Bean & Brew</h1>
+            
+        </div>
         <label for="email">Email Address:</label>
         <input type="email" id="email" name="email"><br><br>
         <label for="password">Password:</label>
         <input type="password" id="password" name="password"><br><br>
         New to Bean & Brew?
-        <a href = "Sign up.html">Create an Account</a><br><br>
+        <a href="#modal2" data-toggle="modal" data-target="#modal2" data-dismiss="modal">Create an Account</a>
+        <br><br>
+        <input type="submit" value="Submit">
+    </div>
+
+    <div class = "modal" id = "modal2">
+        <div class="header">
+        <button class="modal-btn" data-target = "#modal2">&times;</button>
+        <div style="text-align: center;">
+        <img src = "3276535.png" width="200" height = "200"><img>
+        </div>
+        </div>
+        <h3>Create an account for Bean & Brew</h3>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <label for="conpassword">Confirm Password:</label>
+        <input type="password" id="conpassword" name="conpassword"><br><br>
         <input type="submit" value="Submit">
     </div>
 
